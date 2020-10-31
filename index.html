@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100 m-0">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salary Calculator</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body class="h-100 m-0">
+	
+	<div id="logo"><h1>Side<span>Hustle</span></h1></div>
+    <div class="row m-0 align-content-center justify-content-center h-100">
+        <div class="col-11 col-md-8 m-0 py-0 px-4">
+            <div class="form-group p-0">
+                <form onsubmit="return false" class="form-inline">
+                    <div class="form-row align-content-center justify-content-center w-100 mt-4">
+                        <input type="text" placeholder="Enter the number of hours worked" id="hours-worked" class="form-control col-12 col-lg-8 mx-auto mb-2">
+                        <input type="text" placeholder="Enter the number of extra hours worked" id="extra-hours-worked" class="form-control col-12 col-lg-8 mx-auto mb-2">
+                        <div class="row w-100 justify-content-center">
+                            <button onclick="salaryCalc()" class="btn btn-primary rounded">Calculate Salary</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="mt-4 mb-4">
+                <div class="result-class col-12 col-lg-8 m-auto">
+                    <p id="work-class" class="text-secondary"></p>
+                    <p id="result-class" class=""></p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+</body>
+    <script src="salary.js"></script>
+</html>

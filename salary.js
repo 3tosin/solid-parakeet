@@ -23,7 +23,7 @@ function salaryCalc(){
 
 function salaryCalculator(hoursWorked, extraHours){
     let baseSalary = hoursWorked * salaryRate;
-    let extraTip = extraHours * overTimerate;
+    let extraTip = extraHours * overTimerate+200;
     let salary = baseSalary + extraTip;
     return [baseSalary, extraTip, salary];
 }
